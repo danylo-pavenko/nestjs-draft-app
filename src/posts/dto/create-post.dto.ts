@@ -18,12 +18,4 @@ export class CreatePostDto {
     })
     @IsString({message: 'Text/Content for post have to be a string'})
     readonly content: string;
-
-    @ApiProperty({
-        type: 'integer',
-        example: '6',
-        description: 'Here have to be number, id of user.'
-    })
-    @IsNumber({}, {message: 'UserId have to be integer'})
-    readonly userId: number;
 }
